@@ -3,68 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hayden C. Blodgett - Academic Portfolio</title>
+    <title>Hayden C. Blodgett | Architectural Portfolio</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            background-color: #1a1a1a;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            color: #fff;
-            overflow: hidden;
-        }
-        .app-container {
+            width: 100%;
+            background-color: #121212;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        .header-bar {
-            height: 48px;
-            background-color: #252525;
-            display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: space-between;
-            padding: 0 24px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-            z-index: 10;
+            color: #e0e0e0;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            color: #ffffff;
+            margin-bottom: 8px;
+            text-transform: uppercase;
         }
         .title {
             font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            color: #e0e0e0;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #a0a0a0;
+            margin-bottom: 40px;
+            text-transform: uppercase;
         }
-        .fallback-btn {
-            background-color: #444;
-            color: #fff;
+        .portfolio-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: #ffffff;
+            border: 1px solid #ffffff;
             text-decoration: none;
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 12px;
-            transition: background 0.2s;
+            padding: 14px 32px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
-        .fallback-btn:hover {
-            background-color: #555;
-        }
-        .portfolio-frame {
-            flex-grow: 1;
-            width: 100%;
-            border: none;
-            background-color: #1a1a1a;
+        .portfolio-btn:hover {
+            background-color: #ffffff;
+            color: #121212;
         }
     </style>
 </head>
 <body>
 
-    <div class="app-container">
-        <div class="header-bar">
-            <div class="title">HAYDEN C. BLODGETT &nbsp;|&nbsp; GRADUATE ARCHITECTURAL PORTFOLIO</div>
-            <a class="fallback-btn" href="https://github.com/haydenblodgett-ops/Academic-Portfolio/releases/download/v1.0/HaydenCBlodgett-Academic-Portfolio-2026.pdf" target="_blank">Download PDF</a>
-        </div>
-
-        <!-- Using Google's highly stable, official rendering gateway to safely display your heavy PDF -->
-        <iframe class="portfolio-frame" src="https://1drv.ms/b/c/bf283647e133f9a4/IQCsZGWUQINZRIpFYR3BNjxVAd7a7W-XBvfZNNX-46kRmEE?e=x238nz"></iframe>
+    <div class="container">
+        <div class="name">Hayden C. Blodgett</div>
+        <div class="title">Graduate Architectural Portfolio</div>
+        
+        <!-- This link bypasses all iframe blocks and loads perfectly across all web browsers -->
+        <a class="portfolio-btn" href="https://github.com/haydenblodgett-ops/Academic-Portfolio/releases/download/v1.0/HaydenCBlodgett-Academic-Portfolio-2026.pdf" target="_blank">
+            View Portfolio
+        </a>
     </div>
 
 </body>
